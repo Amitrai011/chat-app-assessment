@@ -5,6 +5,7 @@ import ActiveUsers from "./ActiveUsers";
 import Chat from "./Chat";
 import { UserContext } from "./UserProvider";
 import { Navigate } from "react-router-dom";
+import Loader from "./Loader";
 
 function Home() {
   const { currentUser, loading } = useContext(UserContext);
@@ -56,7 +57,7 @@ function Home() {
   }, [currentUser, selectedUser]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   return (

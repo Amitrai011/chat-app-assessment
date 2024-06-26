@@ -4,7 +4,7 @@
   color: white;
 
   .currentUser {
-    background-color: #2e2d51;
+    background-color: #3942a4;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     button {
       border: none;
       border: 1px solid white;
-      background-color: #363656;
+      background-color: transparent;
       color: white;
       border-radius: 8px;
       cursor: pointer;
