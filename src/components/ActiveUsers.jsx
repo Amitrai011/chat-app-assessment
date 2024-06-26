@@ -27,7 +27,6 @@ const ActiveUsers = ({ setSelectedUser, currentUser }) => {
     updateMessageStatus("seen", user);
   };
 
-  // Todo:- How to unsubscribe
   const updateMessageStatus = async (status, selectedUser) => {
     const selectedUserChatRef = ref(
       database,
