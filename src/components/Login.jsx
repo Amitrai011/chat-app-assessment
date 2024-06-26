@@ -42,7 +42,11 @@ const Login = () => {
   return (
     <div className={styles.loginContainer}>
       <h1>Login</h1>
-      <form onSubmit={handleLogin} className={styles.loginForm}>
+      <form
+        onSubmit={handleLogin}
+        className={styles.loginForm}
+        style={{ display: "flex" }}
+      >
         <input
           type="email"
           value={email}

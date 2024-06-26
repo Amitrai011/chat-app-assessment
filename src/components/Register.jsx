@@ -72,7 +72,11 @@ const Register = () => {
   return (
     <div className={loginStyles.loginContainer}>
       <h1>Sign Up</h1>
-      <form onSubmit={handleRegister} className={loginStyles.loginForm}>
+      <form
+        onSubmit={handleRegister}
+        className={loginStyles.loginForm}
+        style={{ display: "flex" }}
+      >
         <input
           type="text"
           value={name}
